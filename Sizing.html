@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing</title>
+    <style>
+        div.div1 p {
+            font-size: 20px;
+            width: 30vw; /* viewport-width */
+            height: 30vh; /* viewport-heigth */
+        }
+
+        div.div2 p {
+            font-size: 2em;
+            /* font size = 2 * font size of parent element -> find till html element */
+        }
+
+        div.div3 p {
+            font-size: 2rem;
+            /* font size = 2 * font size of html element(i.e. root) */
+        }
+
+        div.div4 p {
+            font-size: 20px;
+            height: 100vmin;
+            height: 100vmax;
+            /* for PC -> height is minium -> 100vmin convert to 100 vh (same goes for max as well)*/
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <p>Hello World</p>
+    </div>
+    <div class="div2">
+        <p>hello world 2</p>
+    </div>
+    <div class="div3">
+        <p>hello world 2</p>
+    </div>
+    <div class="div4">
+        <p>hello world 2</p>
+    </div>
+</body>
+
+</html>
