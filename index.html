@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selctors</title>
+</head>
+<style>
+    /* Elements Selectors */
+    div {
+        background-color: blueviolet;
+        color: white;
+    } /* all the div elements will get these properties */
+
+    /* class Selectors */
+    .para {
+        color: black;
+        background-color: aqua;
+    }
+
+    p.para {
+        color: black;
+        background-color: aqua;
+    } /* all the p tags which has para class will get thise properties */
+
+    /* id selectors */
+    #code {
+        background-color: black;
+        color: aqua;
+    }
+
+    code#code {
+        background-color: black;
+        color: aqua;
+    }
+
+    /* child selectors */
+    main>p {
+        background-color: brown;
+        color: yellow;
+    } /* Only the child selectors not the grand child elemsnts */
+
+    /* Desendent Selectors */
+    main a {
+        background-color: rgb(46, 165, 42);
+        color: black;
+    } /* All the 'a' elements inside main will get these properties */
+
+    /* pseudo Selectors */
+    a:active {
+        background-color: black;
+    } /* the moment when you click it will activate */
+
+    a:visited {
+        color: blueviolet;
+    } /* After visiting the site */
+    
+    a:hover {
+        background-color: rgb(47, 93, 133);
+    }
+</style>
+
+<body>
+    <div>
+        My name is Optimus Prime
+    </div>
+    <p class="para">Hello</p>
+    <code id="code">Hello World</code>
+
+    <main id="main">
+        <p id="para-main">I am paragraph inside the mian</p>
+        <a href="http://google.com" target="_blank">google</a>
+    </main>
+</body>
+<a href="http://facebook.com">Facebook</a>
+<a href="http://codewithharry.com">Code With Harry</a>
+
+</html>
